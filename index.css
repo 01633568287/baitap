@@ -1,0 +1,222 @@
+/* @import url('https://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0,1);
+}
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.container .left_side:hover{
+    background: rgba(106,96,81,1);
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(255, 255, 255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.5s;
+        /* Safari & Google Chrome */
+        -webkit-transition-duration: 0.5s; 
+        /* Mozilla Firefox */
+        -moz-transition-duration: 0.5s; 
+        /* Opera */
+        -o-transition-duration: 0.5s;
+        /* IE 9 */
+        -ms-transition-duration: 0.5s;
+}
+.profileText .imgBx img:hover{
+    transform: scale(1.2);
+        /* Safari & Google Chrome */
+        -webkit-transform: scale(1.2);
+        /* Mozilla Firefox */
+        -moz-transform: scale(1.2); 
+        /* Opera */
+        -o-transform: scale(1.2);
+        /* IE 9 */
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2:hover{
+    color: rgb(93,207,175);
+    transition: 3s all;
+  -webkit-transition: 3s all;
+  -moz-transition: 3s all;
+  -o-transition: 3s all;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+    border-bottom: 3px solid rgba(255, 255, 255,0.2);
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.title:hover{
+    color:#fb9804;
+    transition: 3s all;
+  -webkit-transition: 3s all;
+  -moz-transition: 3s all;
+  -o-transition: 3s all;
+}
+.contactInfo ul{
+    position: relative;
+    padding-bottom: 20px;
+
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+.contactInfo ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+}
+.skill
+{
+    padding-top: 40px;
+    border-bottom: 3px solid rgba(255, 255, 255,0.2);
+}
+.skill ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.skill ul li h4{
+    padding-bottom: 15px;
+    color: #03a9f4;
+
+}
+.skill ul li p{
+    padding-bottom: 15px;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.interests{
+    padding-top: 40px;
+}
+.interests p{
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 0px 0px 0px 40px;
+}
+.target{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.right_side h3{
+    color: black;
+    font-family: system-ui;
+    font-size: 1.3rem;
+}
+.right_side h3:hover{
+    color:#fb9804;
+    transition: 3s all;
+  -webkit-transition: 3s all;
+  -moz-transition: 3s all;
+  -o-transition: 3s all;
+}
+.right_side h4{
+    color: #03a9f4;
+}
+.right_side p{
+    color: #3c3c3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.education {
+    padding-bottom: 20px;
+} 
+.education ul li{
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+.education h4{
+    padding-bottom: 10px;
+    
+}
+.experience {
+    padding-bottom: 20px;
+} 
+.experience ul li{
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
